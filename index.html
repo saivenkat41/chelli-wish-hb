@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Harshini!</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <h2>Dear <span class="birthday-girl">Chelli</span></h2>
+        
+        <div class="photo-frame">
+            <!-- Replace with actual image path -->
+            <img src="./harshini.jpg" alt="Harshini's Photo" id="birthdayPhoto">
+        </div>
+        
+        <div class="message">
+            <p>On this special day, I wish you endless happiness, boundless joy, and all the success in the world. May your birthday be as wonderful and amazing as you are!</p>
+        </div>
+        
+        <div class="cake">🎂</div>
+        
+        <div class="wishes">
+            <div class="wish-card" onclick="this.classList.toggle('flipped')">
+                <h3>Health</h3>
+                <p>May you always be blessed with good health and vitality to enjoy life to the fullest.</p>
+            </div>
+            <div class="wish-card" onclick="this.classList.toggle('flipped')">
+                <h3>Happiness</h3>
+                <p>May your life be filled with laughter, joy, and countless moments of happiness.</p>
+            </div>
+            <div class="wish-card" onclick="this.classList.toggle('flipped')">
+                <h3>Success</h3>
+                <p>May all your dreams come true and may you achieve great success in everything you do.</p>
+            </div>
+        </div>
+        
+        <button class="btn" id="surpriseBtn">Click for a Surprise!</button>
+        
+        <div id="surprise" class="hidden">
+            <div id="surpriseContent">
+                <h2 style="color: #ff6b6b; margin-top: 1rem;">Special Message Just For You!</h2>
+                <div class="message">
+                    <p>Harshini, you're an incredible person with a heart of gold. Your kindness, intelligence, and beautiful spirit make the world a better place. Today, we celebrate you and all the wonderful things that make you unique!</p>
+                    <p>May this year bring you closer to your dreams and fill your life with love and adventure. You deserve all the best things life has to offer!</p>
+                </div>
+                
+                
+                
+                <div class="cake" style="font-size: 4rem;">🎉🥳🎊</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-music"></i>
+    </div>
+    
+    <audio id="birthdayMusic" loop>
+        <source src="./harshini audio.mp3" type="audio/mpeg">
+        <!-- Replace with actual birthday music -->
+    </audio>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
